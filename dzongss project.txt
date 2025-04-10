@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Explore Bhutan - Dzongs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPLZFkAUpMNOWLbKjDswidx1jNAgpcadrWw&s') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(5px);
+      z-index: -1;
+    }
+
+    header {
+      background-color: teal; 
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: darkslategray;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: lightgray;
+      color: black;
+      border-radius: 5px;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?bhutan,mountains') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .destinations {
+      padding: 20px;
+      text-align: center;
+      background-color: #f0f8ff;
+    }
+
+    .destination-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .destination {
+      width: 350px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    .destination img {
+      width: 100%;
+      height: 250px;
+      cursor: pointer;
+    }
+
+    .destination h3 {
+      padding: 10px;
+    }
+
+    details {
+      padding: 0 10px 10px 10px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    details summary {
+      list-style: none;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] h3 {
+      color: darkgreen;
+    }
+
+    .feedback {
+      padding: 20px;
+      text-align: center;
+      background-color: lavender;     }
+
+    footer {
+      background-color: darkslategray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .video-section {
+      padding: 30px;
+      text-align: center;
+      background-color: #fffaf0;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Explore Bhutan - Dzongs</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#dzongs">Dzongs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#video">Video</a>
+  </nav>
+
+  <section class="hero">
+    Discover the Majestic Dzongs of Bhutan
+  </section>
+
+  <section class="destinations" id="dzongs">
+    <h2>Top 5 Dzongs in Bhutan</h2>
+    <div class="destination-container">
+
+      <div class="destination">
+        <img src="https://cdn.britannica.com/84/137384-050-6F2A5AB4/dzong-Punakha-Bhutan.jpg" alt="Punakha Dzong" onclick="this.nextElementSibling.open = true;">
+        <details>
+          <summary><h3>Punakha Dzong</h3></summary>
+          <p>Punakha Dzong, also known as the "Palace of Great Happiness", is one of the most beautiful and historically significant dzongs in Bhutan, located at the confluence of the Pho Chhu and Mo Chhu rivers.</p>
+        </details>
+      </div>
+
+      <div class="destination">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKfRxi4G771d8cW07P0rwhAaPBEDkngjJOg&s" alt="Tashichho Dzong" onclick="this.nextElementSibling.open = true;">
+        <details>
+          <summary><h3>Tashichho Dzong</h3></summary>
+          <p>Located in Thimphu, Tashichho Dzong is a grand fortress that houses the throne room, secretariat, and various government offices. It serves as the summer residence of the monastic body.</p>
+        </details>
+      </div>
+
+      <div class="destination">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxzEg4KD1iUwmD3w8a4XwzBXoKJRG-cfu5Iw&s" alt="Paro Dzong" onclick="this.nextElementSibling.open = true;">
+        <details>
+          <summary><h3>Paro Dzong</h3></summary>
+          <p>Paro Dzong, also known as Rinpung Dzong, is a fine example of traditional Bhutanese architecture and overlooks the scenic Paro Valley.</p>
+        </details>
+      </div>
+
+      <div class="destination">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslvZYqDUcpB9DGoFaNMEPiXP44aQw5waTHA&s" alt="Wangdue Phodrang Dzong" onclick="this.nextElementSibling.open = true;">
+        <details>
+          <summary><h3>Wangdue Phodrang Dzong</h3></summary>
+          <p>Perched on a hilltop, this dzong offers stunning views of the Punatsangchu river and was an important center for administration and religion in western Bhutan.</p>
+        </details>
+      </div>
+
+      <div class="destination">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JrvN5I5rLIvccRPT5rzFp4FPwUMbdYlrpw&s" alt="Trongsa Dzong" onclick="this.nextElementSibling.open = true;">
+        <details>
+          <summary><h3>Trongsa Dzong</h3></summary>
+          <p>Trongsa Dzong is the largest fortress in Bhutan and historically played a strategic role in controlling travel between the east and west of the country.</p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="feedback" id="contact">
+    <h2>Give Your Feedback</h2>
+    <form>
+      <p>Select your favorite Dzong:</p>
+      <input type="radio" name="dzong" value="punakha"> Punakha Dzong<br>
+      <input type="radio" name="dzong" value="tashichho"> Tashichho Dzong<br>
+      <input type="radio" name="dzong" value="paro"> Paro Dzong<br>
+      <input type="radio" name="dzong" value="wangdue"> Wangdue Phodrang Dzong<br>
+      <input type="radio" name="dzong" value="trongsa"> Trongsa Dzong<br>
+      <p><input type="checkbox" name="newsletter"> Subscribe to our newsletter</p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+  </section>
+
+  <section class="destinations" id="about">
+    <h2>About Explore Bhutan</h2>
+    <p>Explore Bhutan is a virtual guide dedicated to showcasing the rich cultural heritage and breathtaking architecture of Bhutan's dzongs. Dive into the history, beauty, and spirit of this Himalayan kingdom.</p>
+  </section>
+
+  <section class="video-section" id="video">
+    <h2>Watch the Beauty of Bhutan</h2>
+    <p>Watch a stunning video that captures the breathtaking beauty of Bhutan's dzongs: </p>
+    <a href="https://youtu.be/aVdaRBT7Pa0?si=5KKkjt0FoYODbo1d" target="_blank">Click here to watch on YouTube</a>
+    <br><br>
+    <iframe src="https://www.youtube.com/embed/aVdaRBT7Pa0?si=5KKkjt0FoYODbo1d" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Explore Bhutan. All Rights Reserved.
+  </footer>
+</body>
+</html>
